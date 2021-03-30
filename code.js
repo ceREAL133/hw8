@@ -11,7 +11,10 @@ rules.style.color = 'blue';
 
 //отримати весь список класів елемента з id=rules і вивести їх в console.log
 let fcRules = document.getElementsByClassName('fc_rules');
-console.log(fcRules);
+
+for (const rule of fcRules) {
+    console.log(rule.className);
+}
 
 //поміняти колір тексту у всіх елементів fc_rules на червоний
 
